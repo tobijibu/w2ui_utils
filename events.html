@@ -42,129 +42,213 @@
       navi_icon.classList.toggle('active');
     }
   </script>
-  <div id="barba-wrapper">
-    <div class="barba-container">
-      <div class="wrapper">
-        <div class="navi">
-          <ul>
-            <li><a href="./">Home</a></li>
+  <div class="wrapper">
+    <div class="navi">
+      <ul class="menu">
+        <li><a class="index" href="./index.html">Home</a></li>
+      </ul>
+      <ul class="menu"><span class="s-title">Utilities</span>
+        <li><a class="overview" href="./overview.html">Overview</a></li>
+        <li><span onclick="toggleProperties()">Properties</span>
+          <ul class="hidden" id="navi_properties">
+            <li><a href="./properties/event.html">event</a></li>
+            <li><a href="./properties/formatters.html">formatters</a></li>
+            <li><a href="./properties/hasLocalStorage.html">hasLocalStorage</a></li>
+            <li><a href="./properties/isIE.html">isIE</a></li>
+            <li><a href="./properties/isIOS.html">isIOS</a></li>
+            <li><a href="./properties/settings.html">settings</a></li>
+            <li><a href="./properties/version.html">version</a></li>
           </ul>
-          <ul><span class="s-title">Utilities</span>
-            <li><a href="./overview.html">Overview</a></li>
-            <li><span onclick="toggleProperties()">Properties</span>
-              <ul class="hidden" id="navi_properties">
-                <li class="event"><a href="./properties/event.html">event</a></li>
-                <li class="formatters"><a href="./properties/formatters.html">formatters</a></li>
-                <li class="hasLocalStorage"><a href="./properties/hasLocalStorage.html">hasLocalStorage</a></li>
-                <li class="isIE"><a href="./properties/isIE.html">isIE</a></li>
-                <li class="isIOS"><a href="./properties/isIOS.html">isIOS</a></li>
-                <li class="settings"><a href="./properties/settings.html">settings</a></li>
-                <li class="version"><a href="./properties/version.html">version</a></li>
-              </ul>
-            </li>
-            <li><span onclick="toggleMethods()">Methods</span>
-              <ul class="hidden" id="navi_methods">
-                <li class="age"><a href="./methods/age.html">age</a></li>
-                <li class="base64decode"><a href="./methods/base64decode.html">base64decode</a></li>
-                <li class="base64encode"><a href="./methods/base64encode.html">base64encode</a></li>
-                <li class="checkName"><a href="./methods/checkName.html">checkName</a></li>
-                <li class="checkUniqueId"><a href="./methods/checkUniqueId.html">checkUniqueId</a></li>
-                <li class="cssPrefix"><a href="./methods/cssPrefix.html">cssPrefix</a></li>
-                <li class="date"><a href="./methods/date.html">date</a></li>
-                <li class="decodeTags"><a href="./methods/decodeTags.html">decodeTags</a></li>
-                <li class="encodeTags"><a href="./methods/encodeTags.html">encodeTags</a></li>
-                <li class="escapeId"><a href="./methods/escapeId.html">escapeId</a></li>
-                <li class="formatDate"><a href="./methods/formatDate.html">formatDate</a></li>
-                <li class="formatDateTime"><a href="./methods/formatDateTime.html">formatDateTime</a></li>
-                <li class="formatNumber"><a href="./methods/formatNumber.html">formatNumber</a></li>
-                <li class="formatSize"><a href="./methods/formatSize.html">formatSize</a></li>
-                <li class="formatTime"><a href="./methods/formatTime.html">formatTime</a></li>
-                <li class="getCursorPosition"><a href="./methods/getCursorPosition.html">getCursorPosition</a></li>
-                <li class="getSize"><a href="./methods/getSize.html">getSize</a></li>
-                <li class="getStrWidth"><a href="./methods/getStrWidth.html">getStrWidth</a></li>
-                <li class="interval"><a href="./methods/interval.html">interval</a></li>
-                <li class="isAlphaNumeric"><a href="./methods/isAlphaNumeric.html">isAlphaNumeric</a></li>
-                <li class="isBin"><a href="./methods/isBin.html">isBin</a></li>
-                <li class="isDate"><a href="./methods/isDate.html">isDate</a></li>
-                <li class="isDateTime"><a href="./methods/isDateTime.html">isDateTime</a></li>
-                <li class="isEmail"><a href="./methods/isEmail.html">isEmail</a></li>
-                <li class="isFloat"><a href="./methods/isFloat.html">isFloat</a></li>
-                <li class="isHex"><a href="./methods/isHex.html">isHex</a></li>
-                <li class="isInt"><a href="./methods/isInt.html">isInt</a></li>
-                <li class="isMoney"><a href="./methods/isMoney.html">isMoney</a></li>
-                <li class="isTime"><a href="./methods/isTime.html">isTime</a></li>
-                <li class="lang"><a href="./methods/lang.html">lang</a></li>
-                <li class="locale"><a href="./methods/locale.html">locale</a></li>
-                <li class="lock"><a href="./methods/lock.html">lock</a></li>
-                <li class="md5"><a href="./methods/md5.html">md5</a></li>
-                <li class="message"><a href="./methods/message.html">message</a></li>
-                <li class="parseRoute"><a href="./methods/parseRoute.html">parseRoute</a></li>
-                <li class="scrollBarSize"><a href="./methods/scrollBarSize.html">scrollBarSize</a></li>
-                <li class="setCursorPosition"><a href="./methods/setCursorPosition.html">setCursorPosition</a></li>
-                <li class="stripTags"><a href="./methods/stripTags.html">stripTags</a></li>
-                <li class="transition"><a href="./methods/transition.html">transition</a></li>
-                <li class="unlock"><a href="./methods/unlock.html">unlock</a></li>
-              </ul>
-            </li>
-          </ul><br><span class="s-title">Other</span>
-          <ul>
-            <li><a href="./events.html">Events</a></li>
-            <li><a href="./plugins.html">Plugins</a></li><br><span class="s-title">Common</span>
-            <li><span onclick="toggleCommonEvents()">Events</span>
-              <ul class="hidden" id="navi_common_events">
-                <li class="onDestroy"><a href="./events/onDestroy.html">onDestroy</a></li>
-                <li class="onRefresh"><a href="./events/onRefresh.html">onRefresh</a></li>
-                <li class="onRender"><a href="./events/onRender.html">onRender</a></li>
-                <li class="onResize"><a href="./events/onResize.html">onResize</a></li>
-              </ul>
-            </li>
-            <li><span onclick="toggleCommonProperties()">Properties</span>
-              <ul class="hidden" id="navi_common_properties">
-                <li class="box"><a href="./properties/box.html">box</a></li>
-                <li class="handlers"><a href="./properties/handlers.html">handlers</a></li>
-                <li class="name"><a href="./properties/name.html">name</a></li>
-                <li class="style"><a href="./properties/style.html">style</a></li>
-              </ul>
-            </li>
-            <li><span onclick="toggleCommonMethods()">Methods</span>
-              <ul class="hidden" id="navi_common_methods">
-                <li class="destroy"><a href="./methods/destroy.html">destroy</a></li>
-                <li class="off"><a href="./methods/off.html">off</a></li>
-                <li class="on"><a href="./methods/on.html">on</a></li>
-                <li class="refresh"><a href="./methods/refresh.html">refresh</a></li>
-                <li class="render"><a href="./methods/render.html">render</a></li>
-                <li class="resize"><a href="./methods/resize.html">resize</a></li>
-                <li class="trigger"><a href="./methods/trigger.html">trigger</a></li>
-              </ul>
-            </li>
-            <hr>
-            <li>HTML Source
-              <div id="navi_source"><a href="https://github.com/tobijibu/w2ui_utils/archive/master.zip"><i class="menu-icon material-icons">&#xE884;</i></a><a href="https://github.com/tobijibu/w2ui_utils/"><i class="menu-icon material-icons">&#xE86F;</i></a></div>
-            </li>
+        </li>
+        <li><span onclick="toggleMethods()">Methods</span>
+          <ul class="hidden" id="navi_methods">
+            <li><a href="./methods/age.html">age</a></li>
+            <li><a href="./methods/base64decode.html">base64decode</a></li>
+            <li><a href="./methods/base64encode.html">base64encode</a></li>
+            <li><a href="./methods/checkName.html">checkName</a></li>
+            <li><a href="./methods/checkUniqueId.html">checkUniqueId</a></li>
+            <li><a href="./methods/cssPrefix.html">cssPrefix</a></li>
+            <li><a href="./methods/date.html">date</a></li>
+            <li><a href="./methods/decodeTags.html">decodeTags</a></li>
+            <li><a href="./methods/encodeTags.html">encodeTags</a></li>
+            <li><a href="./methods/escapeId.html">escapeId</a></li>
+            <li><a href="./methods/formatDate.html">formatDate</a></li>
+            <li><a href="./methods/formatDateTime.html">formatDateTime</a></li>
+            <li><a href="./methods/formatNumber.html">formatNumber</a></li>
+            <li><a href="./methods/formatSize.html">formatSize</a></li>
+            <li><a href="./methods/formatTime.html">formatTime</a></li>
+            <li><a href="./methods/getCursorPosition.html">getCursorPosition</a></li>
+            <li><a href="./methods/getSize.html">getSize</a></li>
+            <li><a href="./methods/getStrWidth.html">getStrWidth</a></li>
+            <li><a href="./methods/interval.html">interval</a></li>
+            <li><a href="./methods/isAlphaNumeric.html">isAlphaNumeric</a></li>
+            <li><a href="./methods/isBin.html">isBin</a></li>
+            <li><a href="./methods/isDate.html">isDate</a></li>
+            <li><a href="./methods/isDateTime.html">isDateTime</a></li>
+            <li><a href="./methods/isEmail.html">isEmail</a></li>
+            <li><a href="./methods/isFloat.html">isFloat</a></li>
+            <li><a href="./methods/isHex.html">isHex</a></li>
+            <li><a href="./methods/isInt.html">isInt</a></li>
+            <li><a href="./methods/isMoney.html">isMoney</a></li>
+            <li><a href="./methods/isTime.html">isTime</a></li>
+            <li><a href="./methods/lang.html">lang</a></li>
+            <li><a href="./methods/locale.html">locale</a></li>
+            <li><a href="./methods/lock.html">lock</a></li>
+            <li><a href="./methods/md5.html">md5</a></li>
+            <li><a href="./methods/message.html">message</a></li>
+            <li><a href="./methods/parseRoute.html">parseRoute</a></li>
+            <li><a href="./methods/scrollBarSize.html">scrollBarSize</a></li>
+            <li><a href="./methods/setCursorPosition.html">setCursorPosition</a></li>
+            <li><a href="./methods/stripTags.html">stripTags</a></li>
+            <li><a href="./methods/transition.html">transition</a></li>
+            <li><a href="./methods/unlock.html">unlock</a></li>
           </ul>
-          <script>
-            toggleProperties = function() {
-              let elem = document.getElementById('navi_properties');
-              elem.classList.toggle('hidden');
-            }
-            toggleMethods = function() {
-              let elem = document.getElementById('navi_methods');
-              elem.classList.toggle('hidden');
-            }
-            toggleCommonEvents = function() {
-              let elem = document.getElementById('navi_common_events');
-              elem.classList.toggle('hidden');
-            }
-            toggleCommonProperties = function() {
-              let elem = document.getElementById('navi_common_properties');
-              elem.classList.toggle('hidden');
-            }
-            toggleCommonMethods = function() {
-              let elem = document.getElementById('navi_common_methods');
-              elem.classList.toggle('hidden');
-            }
-          </script>
-        </div>
+        </li>
+      </ul><br><span class="s-title">Other</span>
+      <ul class="menu">
+        <li><a class="events" href="./events.html">Events</a></li>
+        <li><a class="plugins" href="./plugins.html">Plugins</a></li><br><span class="s-title">Common</span>
+        <li><span onclick="toggleCommonEvents()">Events</span>
+          <ul class="hidden" id="navi_common_events">
+            <li><a href="./events/onDestroy.html">onDestroy</a></li>
+            <li><a href="./events/onRefresh.html">onRefresh</a></li>
+            <li><a href="./events/onRender.html">onRender</a></li>
+            <li><a href="./events/onResize.html">onResize</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleCommonProperties()">Properties</span>
+          <ul class="hidden" id="navi_common_properties">
+            <li><a href="./properties/box.html">box</a></li>
+            <li><a href="./properties/handlers.html">handlers</a></li>
+            <li><a href="./properties/name.html">name</a></li>
+            <li><a href="./properties/style.html">style</a></li>
+          </ul>
+        </li>
+        <li><span onclick="toggleCommonMethods()">Methods</span>
+          <ul class="hidden" id="navi_common_methods">
+            <li><a href="./methods/destroy.html">destroy</a></li>
+            <li><a href="./methods/off.html">off</a></li>
+            <li><a href="./methods/on.html">on</a></li>
+            <li><a href="./methods/refresh.html">refresh</a></li>
+            <li><a href="./methods/render.html">render</a></li>
+            <li><a href="./methods/resize.html">resize</a></li>
+            <li><a href="./methods/trigger.html">trigger</a></li>
+          </ul>
+        </li>
+      </ul>
+      <hr>
+      <ul>
+        <li>HTML Source
+          <div id="navi_source"><a href="https://github.com/tobijibu/undefinedarchive/master.zip"><i class="menu-icon material-icons">&#xE884;</i></a><a href="https://github.com/tobijibu/undefined"><i class="menu-icon material-icons">&#xE86F;</i></a></div>
+        </li>
+      </ul>
+      <div id="gcs" data-id="017083506626304158170:rge-1ay6w3y">
+        <script>
+          (function() {
+            var cx = document.getElementById('gcs').getAttribute('data-id');
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search linkTarget=""></gcse:search>
+      </div>
+      <style>
+        .cse .gsc-control-cse,
+        .gsc-control-cse {
+          border: 0px solid #fff;
+          padding: 0;
+        }
+        /* 検索ボックス */
+        .gsc-input-box {
+          border: 0px solid #fff;
+          border-bottom: 1px solid #000;
+        }
+        .gsc-search-box-tools .gsc-search-box .gsc-input {
+          padding-right: 0px;
+        }
+        .gsc-search-box .gsc-input>input:hover,
+        .gsc-input-box-hover {
+          border: 1px solid #fff;
+          border-bottom: 1px solid #333;
+          border-top-color: #fff;
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+        .gsc-search-box .gsc-input>input:focus,
+        .gsc-input-box-focus {
+          border: 1px solid #fff;
+          border-bottom: 1px solid #333;
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+        .gsib_a {
+          padding-top: 2px;
+        }
+        .gsst_a .gscb_a {
+          color: #aaa;
+        }
+        /* 検索ボタン */
+        input.gsc-search-button {
+          margin-left: 0;
+        }
+        .cse .gsc-search-button input.gsc-search-button-v2,
+        input.gsc-search-button-v2 {
+          padding: 6px;
+          margin-top: 5px;
+        }
+        .cse input.gsc-search-button,
+        input.gsc-search-button {
+          color: #fff;
+          border: 1px solid #000;
+          border-radius: 0;
+          -moz-border-radius: 0;
+          -webkit-border-radius: 0;
+          background-color: #000;
+          background-image: none;
+          filter: none;
+          transition: .4s;
+        }
+        .cse input.gsc-search-button:hover,
+        input.gsc-search-button:hover {
+          color: #333;
+          border-color: #333;
+          background-color: #333;
+          background-image: none;
+          filter: none;
+          transition: .4s;
+        }
+      </style>
+      <script>
+        toggleProperties = function() {
+          let elem = document.getElementById('navi_properties');
+          elem.classList.toggle('hidden');
+        }
+        toggleMethods = function() {
+          let elem = document.getElementById('navi_methods');
+          elem.classList.toggle('hidden');
+        }
+        toggleCommonEvents = function() {
+          let elem = document.getElementById('navi_common_events');
+          elem.classList.toggle('hidden');
+        }
+        toggleCommonProperties = function() {
+          let elem = document.getElementById('navi_common_properties');
+          elem.classList.toggle('hidden');
+        }
+        toggleCommonMethods = function() {
+          let elem = document.getElementById('navi_common_methods');
+          elem.classList.toggle('hidden');
+        }
+      </script>
+    </div>
+    <div id="barba-wrapper">
+      <div class="barba-container">
         <div class="main">
           <h1>Events</h1>
           <p>
@@ -183,13 +267,13 @@
             "on"ではじまるプロパティは全てイベントです。
           </p>
           <h2>プロパティ、メソッド</h2>
-          <h3><a href="./properties/handlers.html">handlers</a></h3>
+          <h3><a class="no-barba" href="./properties/handlers.html">handlers</a></h3>
           <p>イベントハンドラの配列</p>
-          <h3><a href="./methods/on.html">on</a></h3>
+          <h3><a class="no-barba" href="./methods/on.html">on</a></h3>
           <p>w2uiオブジェクトにイベントハンドラを追加する。</p>
-          <h3><a href="./methods/off.html">off</a></h3>
+          <h3><a class="no-barba" href="./methods/off.html">off</a></h3>
           <p>w2uiオブジェクトからイベントハンドラを削除する。</p>
-          <h3><a href="./methods/trigger.html">trigger</a></h3>
+          <h3><a class="no-barba" href="./methods/trigger.html">trigger</a></h3>
           <p><code>.on()</code>で追加した全てのイベントを実行する。</p>
           <h2>イベントハンドラ</h2>
           <p>イベントが動きだすと、ハンドラは<code>function (event)</code>のように1つのパラメータを受け取ります。
