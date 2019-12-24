@@ -1,12 +1,157 @@
-<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><title>common.handlers | w2ui.utils - にほんご。</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta property="og:title" content="common.handlers | w2ui.utils - にほんご。"><meta property="og:url"><meta property="og:type" content="article"><link rel="icon" href="https://tr.you84815.space/w2ui_utils/favicon.ico"><link rel="stylesheet" href="../css/main.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-106478577-1', 'auto');</script></head><body><div id="container"><header><div class="icon"><a class="no-barba" href="https://tr.you84815.space/"><svg width="16" height="16"><rect width="16" height="16" fill="#e0e0e0"></rect></svg></a></div><div class="navi_toggle" onclick="toggleMenu()"><svg id="menu_close" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg id="menu_open" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg></div><div class="title">w2ui.utils - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div></header><div class="navi" id="navi"><ul class="menu"><li><a class="index" href="../index.html">Home</a></li></ul><ul class="menu"><span class="s-title">Utilities</span><li><a class="overview" href="../overview.html">Overview</a></li><li><span onclick="toggleNaviSubMenu('navi_properties')">Properties</span><ul class="hidden" id="navi_properties"><li><a href="../properties/event.html">event</a></li><li><a href="../properties/formatters.html">formatters</a></li><li><a href="../properties/hasLocalStorage.html">hasLocalStorage</a></li><li><a href="../properties/isIE.html">isIE</a></li><li><a href="../properties/isIOS.html">isIOS</a></li><li><a href="../properties/settings.html">settings</a></li><li><a href="../properties/version.html">version</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_methods')">Methods</span><ul class="hidden" id="navi_methods"><li><a href="../methods/age.html">age</a></li><li><a href="../methods/base64decode.html">base64decode</a></li><li><a href="../methods/base64encode.html">base64encode</a></li><li><a href="../methods/checkName.html">checkName</a></li><li><a href="../methods/checkUniqueId.html">checkUniqueId</a></li><li><a href="../methods/cssPrefix.html">cssPrefix</a></li><li><a href="../methods/date.html">date</a></li><li><a href="../methods/decodeTags.html">decodeTags</a></li><li><a href="../methods/encodeTags.html">encodeTags</a></li><li><a href="../methods/escapeId.html">escapeId</a></li><li><a href="../methods/formatDate.html">formatDate</a></li><li><a href="../methods/formatDateTime.html">formatDateTime</a></li><li><a href="../methods/formatNumber.html">formatNumber</a></li><li><a href="../methods/formatSize.html">formatSize</a></li><li><a href="../methods/formatTime.html">formatTime</a></li><li><a href="../methods/getCursorPosition.html">getCursorPosition</a></li><li><a href="../methods/getSize.html">getSize</a></li><li><a href="../methods/getStrWidth.html">getStrWidth</a></li><li><a href="../methods/interval.html">interval</a></li><li><a href="../methods/isAlphaNumeric.html">isAlphaNumeric</a></li><li><a href="../methods/isBin.html">isBin</a></li><li><a href="../methods/isDate.html">isDate</a></li><li><a href="../methods/isDateTime.html">isDateTime</a></li><li><a href="../methods/isEmail.html">isEmail</a></li><li><a href="../methods/isFloat.html">isFloat</a></li><li><a href="../methods/isHex.html">isHex</a></li><li><a href="../methods/isInt.html">isInt</a></li><li><a href="../methods/isMoney.html">isMoney</a></li><li><a href="../methods/isTime.html">isTime</a></li><li><a href="../methods/lang.html">lang</a></li><li><a href="../methods/locale.html">locale</a></li><li><a href="../methods/lock.html">lock</a></li><li><a href="../methods/md5.html">md5</a></li><li><a href="../methods/message.html">message</a></li><li><a href="../methods/parseRoute.html">parseRoute</a></li><li><a href="../methods/scrollBarSize.html">scrollBarSize</a></li><li><a href="../methods/setCursorPosition.html">setCursorPosition</a></li><li><a href="../methods/stripTags.html">stripTags</a></li><li><a href="../methods/transition.html">transition</a></li><li><a href="../methods/unlock.html">unlock</a></li></ul></li></ul><br><span class="s-title">Other</span><ul class="menu"><li><a class="events" href="../events.html">Events</a></li><li><a class="plugins" href="../plugins.html">Plugins</a></li><br><span class="s-title">Common</span><li><span onclick="toggleNaviSubMenu('navi_common_events')">Events</span><ul class="hidden" id="navi_common_events"><li><a href="../events/onDestroy.html">onDestroy</a></li><li><a href="../events/onRefresh.html">onRefresh</a></li><li><a href="../events/onRender.html">onRender</a></li><li><a href="../events/onResize.html">onResize</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_common_properties')">Properties</span><ul id="navi_common_properties"><li><a href="../properties/box.html">box</a></li><li><a class="active" href="../properties/handlers.html">handlers</a></li><li><a href="../properties/name.html">name</a></li><li><a href="../properties/style.html">style</a></li></ul></li><li><span onclick="toggleNaviSubMenu('navi_common_methods')">Methods</span><ul class="hidden" id="navi_common_methods"><li><a href="../methods/destroy.html">destroy</a></li><li><a href="../methods/off.html">off</a></li><li><a href="../methods/on.html">on</a></li><li><a href="../methods/refresh.html">refresh</a></li><li><a href="../methods/render.html">render</a></li><li><a href="../methods/resize.html">resize</a></li><li><a href="../methods/trigger.html">trigger</a></li></ul></li></ul></div><div id="content"><div id="main"><div id="barba-wrapper"><div class="barba-container"><h1>common.handlers</h1><div id="update_date"><span>更新日: 2018.09.07
-</span></div><p>イベントハンドラの配列です。</p><pre><code><span class="hljs-built_in">Array</span>, <span class="hljs-keyword">default</span> = []</code></pre><br><p>イベントハンドラを指定する場合に、この配列を直接変更する必要はありません。
-イベントを追加する場合は<a class="no-barba" href="../methods/on.html"><code>.on</code></a>メソッド、イベントを削除する場合は<a class="no-barba" href="../methods/off.html"><code>.off</code></a>メソッドを使います。
-追加したイベントハンドラを確認する為に、この配列をループ処理すると便利です。</p><pre><code>$(<span class="hljs-string">'#layout'</span>).w2layout({
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>common.handlers | w2ui.utils - にほんご。</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="common.handlers | w2ui.utils - にほんご。">
+    <meta property="og:url">
+    <meta property="og:type" content="article">
+    <link rel="icon" href="https://tr.you84815.space/w2ui_utils/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link id="theme_style" rel="stylesheet" type="text/css" href="">
+    <script id="srcTheme" src="../js/toggleTheme.js" data-dir="w2ui_utils"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-106478577-1', 'auto');
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="icon"><a class="no-barba" href="https://tr.you84815.space/">
+            <svg width="16" height="16">
+              <rect width="16" height="16" fill="#e0e0e0"></rect>
+            </svg></a></div>
+        <div class="navi_toggle" onclick="toggleMenu()">
+          <svg id="menu_close" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
+          <svg id="menu_open" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+          </svg>
+        </div>
+        <div class="title">w2ui.utils - <a class="no-barba" href="https://tr.you84815.space/">にほんご。</a></div><span id="toggleTheme">
+          <svg role="img" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"></path>
+          </svg></span>
+      </header>
+      <div class="navi" id="navi">
+        <ul class="menu">
+          <li><a class="index" href="../index.html">Home</a></li>
+        </ul>
+        <ul class="menu"><span class="s-title">Utilities</span>
+          <li><a class="overview" href="../overview.html">Overview</a></li>
+          <li><span onclick="toggleNaviSubMenu('navi_properties')">Properties</span>
+            <ul class="hidden" id="navi_properties">
+              <li><a href="../properties/event.html">event</a></li>
+              <li><a href="../properties/formatters.html">formatters</a></li>
+              <li><a href="../properties/hasLocalStorage.html">hasLocalStorage</a></li>
+              <li><a href="../properties/isIE.html">isIE</a></li>
+              <li><a href="../properties/isIOS.html">isIOS</a></li>
+              <li><a href="../properties/settings.html">settings</a></li>
+              <li><a href="../properties/version.html">version</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_methods')">Methods</span>
+            <ul class="hidden" id="navi_methods">
+              <li><a href="../methods/age.html">age</a></li>
+              <li><a href="../methods/base64decode.html">base64decode</a></li>
+              <li><a href="../methods/base64encode.html">base64encode</a></li>
+              <li><a href="../methods/checkName.html">checkName</a></li>
+              <li><a href="../methods/checkUniqueId.html">checkUniqueId</a></li>
+              <li><a href="../methods/cssPrefix.html">cssPrefix</a></li>
+              <li><a href="../methods/date.html">date</a></li>
+              <li><a href="../methods/decodeTags.html">decodeTags</a></li>
+              <li><a href="../methods/encodeTags.html">encodeTags</a></li>
+              <li><a href="../methods/escapeId.html">escapeId</a></li>
+              <li><a href="../methods/formatDate.html">formatDate</a></li>
+              <li><a href="../methods/formatDateTime.html">formatDateTime</a></li>
+              <li><a href="../methods/formatNumber.html">formatNumber</a></li>
+              <li><a href="../methods/formatSize.html">formatSize</a></li>
+              <li><a href="../methods/formatTime.html">formatTime</a></li>
+              <li><a href="../methods/getCursorPosition.html">getCursorPosition</a></li>
+              <li><a href="../methods/getSize.html">getSize</a></li>
+              <li><a href="../methods/getStrWidth.html">getStrWidth</a></li>
+              <li><a href="../methods/interval.html">interval</a></li>
+              <li><a href="../methods/isAlphaNumeric.html">isAlphaNumeric</a></li>
+              <li><a href="../methods/isBin.html">isBin</a></li>
+              <li><a href="../methods/isDate.html">isDate</a></li>
+              <li><a href="../methods/isDateTime.html">isDateTime</a></li>
+              <li><a href="../methods/isEmail.html">isEmail</a></li>
+              <li><a href="../methods/isFloat.html">isFloat</a></li>
+              <li><a href="../methods/isHex.html">isHex</a></li>
+              <li><a href="../methods/isInt.html">isInt</a></li>
+              <li><a href="../methods/isMoney.html">isMoney</a></li>
+              <li><a href="../methods/isTime.html">isTime</a></li>
+              <li><a href="../methods/lang.html">lang</a></li>
+              <li><a href="../methods/locale.html">locale</a></li>
+              <li><a href="../methods/lock.html">lock</a></li>
+              <li><a href="../methods/md5.html">md5</a></li>
+              <li><a href="../methods/message.html">message</a></li>
+              <li><a href="../methods/parseRoute.html">parseRoute</a></li>
+              <li><a href="../methods/scrollBarSize.html">scrollBarSize</a></li>
+              <li><a href="../methods/setCursorPosition.html">setCursorPosition</a></li>
+              <li><a href="../methods/stripTags.html">stripTags</a></li>
+              <li><a href="../methods/transition.html">transition</a></li>
+              <li><a href="../methods/unlock.html">unlock</a></li>
+            </ul>
+          </li>
+        </ul><br><span class="s-title">Other</span>
+        <ul class="menu">
+          <li><a class="events" href="../events.html">Events</a></li>
+          <li><a class="plugins" href="../plugins.html">Plugins</a></li><br><span class="s-title">Common</span>
+          <li><span onclick="toggleNaviSubMenu('navi_common_events')">Events</span>
+            <ul class="hidden" id="navi_common_events">
+              <li><a href="../events/onDestroy.html">onDestroy</a></li>
+              <li><a href="../events/onRefresh.html">onRefresh</a></li>
+              <li><a href="../events/onRender.html">onRender</a></li>
+              <li><a href="../events/onResize.html">onResize</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_common_properties')">Properties</span>
+            <ul id="navi_common_properties">
+              <li><a href="../properties/box.html">box</a></li>
+              <li><a class="active" href="../properties/handlers.html">handlers</a></li>
+              <li><a href="../properties/name.html">name</a></li>
+              <li><a href="../properties/style.html">style</a></li>
+            </ul>
+          </li>
+          <li><span onclick="toggleNaviSubMenu('navi_common_methods')">Methods</span>
+            <ul class="hidden" id="navi_common_methods">
+              <li><a href="../methods/destroy.html">destroy</a></li>
+              <li><a href="../methods/off.html">off</a></li>
+              <li><a href="../methods/on.html">on</a></li>
+              <li><a href="../methods/refresh.html">refresh</a></li>
+              <li><a href="../methods/render.html">render</a></li>
+              <li><a href="../methods/resize.html">resize</a></li>
+              <li><a href="../methods/trigger.html">trigger</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="content">
+        <div id="main">
+          <div id="barba-wrapper">
+            <div class="barba-container">
+              <h1>common.handlers</h1>
+              <div id="update_date"><span>更新日: 2018.09.07
+</span>
+              </div>
+              <p>イベントハンドラの配列です。</p>
+              <pre><code><span class="hljs-built_in">Array</span>, <span class="hljs-keyword">default</span> = []</code></pre><br>
+              <p>
+                イベントハンドラを指定する場合に、この配列を直接変更する必要はありません。
+                イベントを追加する場合は<a class="no-barba" href="../methods/on.html"><code>.on</code></a>メソッド、イベントを削除する場合は<a class="no-barba" href="../methods/off.html"><code>.off</code></a>メソッドを使います。
+                追加したイベントハンドラを確認する為に、この配列をループ処理すると便利です。
+              </p>
+              <pre><code>$(<span class="hljs-string">'#layout'</span>).w2layout({
     <span class="hljs-attr">name</span>    : <span class="hljs-string">'layout'</span>,
     <span class="hljs-attr">panels</span>  : [
         { <span class="hljs-attr">type</span>: <span class="hljs-string">'top'</span>, <span class="hljs-attr">size</span>: <span class="hljs-number">40</span> },
@@ -23,7 +168,32 @@ w2ui[<span class="hljs-string">'layout'</span>].on(<span class="hljs-string">'*'
 <span class="hljs-comment">// iterating through event handlers</span>
 <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i <span class="hljs-keyword">in</span> w2ui[<span class="hljs-string">'layout'</span>].handlers) {
     <span class="hljs-built_in">console</span>.log(w2ui[<span class="hljs-string">'layout'</span>].handlers[i]);
-}</code></pre><blockquote>* <code>w2ui['layout'].on('*', function(){});</code>で全てのトリガーに対してイベントリスナーを設定できるようなのですが、
-<code>resize</code>だけが登録され、他のイベントは登録されないようです。(要確認)</blockquote><br><br><div class="license"><p>&copy; <span id="w2ui_cry">2017</span>. <img src="../img/email.png">.<br> Code licensed under the<a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>. Documentation licensed under<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p><p>このコンテンツはvitmalinaによる<a href="http://w2ui.com/web/docs/1.5/">w2ui.utilsドキュメント</a>を翻訳/改変したものです。</p><style>.license img {
-  vertical-align: middle;
-}</style><script>document.getElementById('w2ui_cry').innerHTML = new Date().getFullYear();</script></div></div></div></div></div><footer><span> &copy; <span id="copy_year">2017</span> tobijibu</span></footer></div><noscript id="deferred-styles"><link href="../css/lazy.css" rel="stylesheet"></noscript><script src="../js/main.js" defer></script><script src="../js/jquery-2.2.4.min.js"></script><script src="../js/w2ui-1.5.rc1.min.js"></script><div id="src" hidden></div></body></html>
+}</code></pre>
+              <blockquote>* <code>w2ui['layout'].on('*', function(){});</code>で全てのトリガーに対してイベントリスナーを設定できるようなのですが、
+                <code>resize</code>だけが登録され、他のイベントは登録されないようです。(要確認)
+              </blockquote><br><br>
+              <div class="license">
+                <p>&copy; <span id="w2ui_cry">2017</span>. <img src="../img/email.png">.<br> Code licensed under the<a href="https://en.wikipedia.org/wiki/MIT_License">MIT License</a>. Documentation licensed under<a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.</p>
+                <p>このコンテンツはvitmalinaによる<a href="http://w2ui.com/web/docs/1.5/">w2ui.utilsドキュメント</a>を翻訳/改変したものです。</p>
+                <style>
+                  .license img {
+                    vertical-align: middle;
+                  }
+                </style>
+                <script>document.getElementById('w2ui_cry').innerHTML = new Date().getFullYear();</script>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer><span>&copy; <span id="copy_year">2017</span> tobijibu</span></footer>
+    </div>
+    <noscript id="deferred-styles">
+      <link href="../css/lazy.css" rel="stylesheet">
+    </noscript>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/jquery-2.2.4.min.js"></script>
+    <script src="../js/w2ui-1.5.rc1.min.js"></script>
+    <div id="src" hidden></div>
+  </body>
+</html>
